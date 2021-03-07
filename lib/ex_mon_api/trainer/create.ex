@@ -1,7 +1,7 @@
 defmodule ExMonApi.Trainer.Create do
   alias ExMonApi.{Trainer, Repo}
 
-  def call(params) do
+  def call(conn, params) do
     params
     |> Trainer.build()
     |> create_trainer()
